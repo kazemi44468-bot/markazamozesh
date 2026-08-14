@@ -1,0 +1,23 @@
+name: Build Website Release
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Package website
+        run: |
+          mkdir -p release/markazamozesh
+          cp -R apps/website/. release/markazamozesh/
+          cd release
+          zip -r ../markazamozesh-release.zip markazamozesh
+      - name: Upload release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: markazamozesh-release
+          path: markazamozesh-release.zip
+          retention-days: 30
