@@ -1,44 +1,9 @@
-# مرکز آموزش | Markaz Amouzesh
+# صفحات ارسالی کاربر
 
-دامنه: https://markazamozesh.ir
-مخزن: kazemi44468-bot/markazamozesh
+این پوشه برای دریافت صفحات HTML/CSS/JS و Assetهایی است که کاربر ساخته و قرار است پیش از ورود به نسخه اصلی پروژه بررسی و یکپارچه‌سازی شوند.
 
-## مأموریت
-مرکز آموزش، زیرمجموعه زیست‌بوم هوشمند فناوری، یک مجموعه تخصصی برای مشاوره، طراحی، راه‌اندازی و توسعه سامانه‌های آموزشی و هوشمند و همچنین ارائه یک پلتفرم جامع یادگیری فردی و سازمانی است.
-
-## دو محصول اصلی
-1. **مرکز خدمات و راهکارهای آموزشی** — Consulting / Solutions / Custom Platforms
-2. **پلتفرم جامع آموزشی مرکز آموزش** — Personal + Organizational Learning Platform
-
-## اصول ثابت
-- Person First
-- Mobile First
-- AI Ready / AI First
-- Outcome Based Learning
-- Skill Based Architecture
-- Adaptive Learning
-- Project Based Learning
-- Learning Identity
-- API First
-- Multi-Tenant Ready
-- Modular Core
-
-## وضعیت فعلی
-**Phase 0 — Strategy & Architecture**
-
-هیچ توسعه UI یا Backend قبل از تکمیل اسناد معماری Phase 0 نباید شروع شود.
-
-## اسناد مرجع
-- `docs/strategy/MASTER-STRATEGY.md`
-- `docs/architecture/PRODUCT-ARCHITECTURE.md`
-- `docs/architecture/DOMAIN-MODEL.md`
-- `docs/architecture/INFORMATION-ARCHITECTURE.md`
-- `docs/architecture/USER-FLOWS.md`
-- `docs/architecture/TECHNICAL-ARCHITECTURE.md`
-- `docs/ai/AI-STRATEGY.md`
-- `docs/ux/UX-PRINCIPLES.md`
-- `docs/roadmap/MASTER-ROADMAP.md`
-- `docs/PROJECT-STATUS.md`
-
-## قانون پروژه
-هر Feature باید Persona، هدف، جایگاه در Architecture، داده، API، Mobile UX، AI Role، Analytics و وضعیت‌های Loading/Empty/Error را مشخص کند.
+## قواعد
+- فایل‌های این پوشه فعلاً بخشی از نسخه Production نیستند.
+- محتوا و ایده اصلی صفحات حفظ می‌شود.
+- پس از بررسی، Header، Navigation، Mobile Menu، Footer، Typography، spacing، cards و responsive با Design System مرکز آموزش هماهنگ می‌شوند.
+- تغییرات روی شاخه کاری انجام می‌شود و تا تأیید کاربر وارد `main` نخواهد شد.
