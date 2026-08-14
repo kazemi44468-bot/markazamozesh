@@ -1,7 +1,7 @@
 # Project Status — مرکز آموزش
 
 ## Current Phase
-**PHASE 0 — Strategy & Architecture**
+**PHASE 0 — Strategy & Architecture + FRONTEND MVP TRACK**
 
 ## Progress
 - [x] Repository created
@@ -10,6 +10,12 @@
 - [x] Person-first / mobile-first / AI-first principles defined
 - [x] High-level page architecture defined
 - [x] Documentation structure created
+- [x] Domain model baseline created
+- [x] Frontend-first execution model defined
+- [x] Home demo frontend created
+- [x] Services page created
+- [x] Consulting service detail created
+- [x] Frontend MVP execution plan created
 - [ ] Product/domain model finalized
 - [ ] Information architecture finalized
 - [ ] User flows finalized
@@ -17,28 +23,45 @@
 - [ ] Design direction finalized
 - [ ] Design system specification finalized
 
+## Active Frontend Track
+**Website MVP — Track A**
+
+Completed:
+1. Home
+2. Services
+3. Consulting Detail
+
+Next:
+4. Solutions
+5. Platform
+6. Courses
+7. Course Detail
+8. Instructors
+9. Resources
+10. Consultation flow
+
+## Parallel Product Track
+**Track B — Architecture**
+
+Next architecture deliverables:
+1. Final Domain Model
+2. Information Architecture
+3. User Flows
+4. Technical Architecture
+5. AI Architecture
+6. Design System
+
 ## Gate 0 — Exit Criteria
-Phase 0 is complete only when the following are approved:
-1. Product Architecture
-2. Domain Model
-3. Information Architecture
-4. User Flows
-5. Technical Architecture
-6. AI Strategy
-7. Master Roadmap
-8. UX Principles
+Phase 0 is complete when Product Architecture, Domain Model, Information Architecture, User Flows, Technical Architecture, AI Strategy, Master Roadmap and UX Principles are approved.
 
-## Next Phase
-**PHASE 1 — Product UX & Design System**
+## Important Execution Rule
+Frontend production/demo work is now allowed in parallel as explicitly approved by the project plan. Backend/database implementation remains gated by architecture completion. Every frontend page must be mobile-first, RTL, demo-content ready, AI-ready and connected to the defined information architecture.
 
-## Phase rule
-Until Gate 0 is passed, do not begin production UI, database implementation, or application code except architecture prototypes explicitly marked as experiments.
+## Latest Decisions
+- Build visible frontend and demo content early.
+- Do not wait for backend completion to validate product UX.
+- Keep demo data replaceable by API data later.
+- Maintain one source of truth for project status in this file.
 
-## Working rule
-At the end of every meaningful task, update this file with:
-- current phase
-- completed items
-- next item
-- blockers
-- decisions
-- relevant commit
+## Next Task
+Build the Solutions page, then Platform and Courses while finalizing the architecture documents in parallel.
