@@ -1,9 +1,6 @@
-/* MARKAZ AMOOZESH — global spacing and back-to-top fixes */
+/* MARKAZ AMOOZESH — global spacing, hero cleanup and back-to-top fixes */
 html,body{margin-bottom:0!important}
 body{padding-bottom:0!important}
-.ma-back-top{position:fixed!important;right:24px!important;bottom:24px!important;width:48px!important;height:48px!important;border:0!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:0!important;padding:0!important;z-index:9999!important;cursor:pointer!important;opacity:0!important;visibility:hidden!important;transform:translateY(12px)!important;pointer-events:none!important;transition:opacity .2s ease,transform .2s ease,visibility .2s ease!important;box-shadow:0 10px 28px rgba(15,23,42,.18)!important}
-.ma-back-top.show{opacity:1!important;visibility:visible!important;transform:translateY(0)!important;pointer-events:auto!important}
-.ma-back-top span{display:none!important}
-@media(max-width:780px){body{padding-bottom:0!important}.footer{padding-bottom:88px!important}.bottom-nav{height:68px!important}.ma-back-top{right:18px!important;bottom:86px!important;width:46px!important;height:46px!important}}
-@media(min-width:781px){.bottom-nav{display:none!important}}
-@media(prefers-reduced-motion:reduce){.ma-back-top{transition:none!important}}
+/* صفحه خانه و درباره ما بدون Hero قدیمی */
+.home-page .home-hero,.about-page .about-hero{display:none!important}
+.ma-back-top{position:fixed!important;right:24px!important;bottom:24px!important;width:48px!important;height:48px!important;border:0!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:0!important;padding:0!important;z-index:9999!important;cursor:pointer!important;opacity:0!important;visibility:hidden!important;transform:translateY(12px)!important;pointer-events:none!important;transition:opacity .2s ease,transform .2s ease,visibility .2s ease!important;box-shadow:0 10px 28px rgba(15,23,42,.18)!important}.ma-back-top.show{opacity:1!important;visibility:visible!important;transform:translateY(0)!important;pointer-events:auto!important}.ma-back-top span{display:none!important}@media(max-width:780px){body{padding-bottom:0!important}.footer{padding-bottom:88px!important}.bottom-nav{height:68px!important}.ma-back-top{right:18px!important;bottom:86px!important;width:46px!important;height:46px!important}}@media(min-width:781px){.bottom-nav{display:none!important}}@media(prefers-reduced-motion:reduce){.ma-back-top{transition:none!important}}
