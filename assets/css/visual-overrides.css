@@ -1,0 +1,35 @@
+/* مرکز آموزش — refined contrast, pattern and typography layer */
+:root{--vo-ink:#10243a;--vo-body:#33475b;--vo-muted:#607386;--vo-blue:#1769aa;--vo-purple:#6657b8;--vo-line:#d7e3ec;--vo-surface:#fff}
+/* Readability: force a coherent text hierarchy across legacy page styles. */
+.ma-page .service-card,.ma-page .education-card,.ma-page .course-card,.ma-page .instructor-card,.ma-page .model-card,.ma-page .detail-panel,.ma-page .step,.ma-page .cooperation-step,.ma-page .faq-group,.ma-page .faq-cta,.ma-page .path-side{color:var(--vo-body)!important}
+.ma-page .service-card h3,.ma-page .education-card h3,.ma-page .course-card h3,.ma-page .instructor-card h3,.ma-page .model-card h3,.ma-page .detail-panel h2,.ma-page .step h3,.ma-page .cooperation-step h4,.ma-page .faq-group-head h2,.ma-page .faq-cta h2,.ma-page .path-side h3{color:var(--vo-ink)!important}
+.ma-page .service-card p,.ma-page .education-card p,.ma-page .course-card p,.ma-page .instructor-card p,.ma-page .model-card p,.ma-page .detail-panel p,.ma-page .step p,.ma-page .cooperation-step p,.ma-page .faq-list details p,.ma-page .path-side li{color:var(--vo-muted)!important}
+.ma-page .service-card li,.ma-page .model-card li,.ma-page .detail-panel li{color:#4f6477!important}
+.ma-page .service-card a,.ma-page .education-card a,.ma-page .course-card a,.ma-page .instructor-card a,.ma-page .service-link,.ma-page .course-link{color:var(--vo-blue)!important}
+/* Cards: each family receives a different, quiet visual language instead of one repeated grid. */
+.ma-page .service-card,.ma-page .education-card,.ma-page .course-card,.ma-page .instructor-card,.ma-page .model-card,.ma-page .detail-panel,.ma-page .step,.ma-page .cooperation-step,.ma-page .faq-group,.ma-page .path-side{position:relative;overflow:hidden;background:#fff!important;border-color:var(--vo-line)!important}
+.ma-page .service-card:before,.ma-page .education-card:before,.ma-page .course-card:before,.ma-page .instructor-card:before,.ma-page .model-card:before,.ma-page .detail-panel:before,.ma-page .step:before,.ma-page .cooperation-step:before,.ma-page .faq-group:before,.ma-page .path-side:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:radial-gradient(circle at 100% 0,rgba(23,105,170,.09),transparent 30%),linear-gradient(135deg,transparent 0 72%,rgba(102,87,184,.035) 72% 73%,transparent 73% 100%)}
+.ma-page .education-card:before,.ma-page .course-card:before{background:radial-gradient(circle at 0 100%,rgba(102,87,184,.07),transparent 30%),repeating-linear-gradient(135deg,transparent 0 15px,rgba(23,105,170,.025) 15px 16px,transparent 16px 30px)}
+.ma-page .instructor-card:before{background:radial-gradient(circle at 50% 0,rgba(23,105,170,.09),transparent 36%),radial-gradient(circle at 100% 100%,rgba(102,87,184,.06),transparent 30%)}
+.ma-page .model-card:before,.ma-page .detail-panel:before{background:linear-gradient(90deg,rgba(23,105,170,.045) 1px,transparent 1px),linear-gradient(rgba(23,105,170,.035) 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(to bottom,black,transparent 75%)}
+.ma-page .step:before,.ma-page .cooperation-step:before{background:radial-gradient(circle at 50% 0,rgba(23,105,170,.08),transparent 42%)}
+.ma-page .faq-group:before{background:linear-gradient(120deg,rgba(23,105,170,.05),transparent 45%),radial-gradient(circle at 100% 0,rgba(102,87,184,.07),transparent 34%)}
+.ma-page .path-side:before{background:repeating-linear-gradient(0deg,transparent 0 20px,rgba(23,105,170,.025) 20px 21px)}
+.ma-page .service-card>*,.ma-page .education-card>*,.ma-page .course-card>*,.ma-page .instructor-card>*,.ma-page .model-card>*,.ma-page .detail-panel>*,.ma-page .step>*,.ma-page .cooperation-step>*,.ma-page .faq-group>*,.ma-page .path-side>*{position:relative;z-index:1}
+/* Typography ornaments: pattern is integrated with headings, not only the page background. */
+.ma-page .service-section-head h2,.ma-page .education-section-head h2,.ma-page .section-header h2,.ma-page .section-head h2{position:relative;display:inline-block;padding-bottom:9px}
+.ma-page .service-section-head h2:after,.ma-page .education-section-head h2:after,.ma-page .section-header h2:after,.ma-page .section-head h2:after{content:"";position:absolute;right:0;bottom:0;width:54px;height:3px;border-radius:4px;background:linear-gradient(90deg,var(--vo-blue),var(--vo-purple));box-shadow:24px 0 0 -1px rgba(102,87,184,.16)}
+.ma-page .service-card .service-number,.ma-page .education-card .number{position:relative;z-index:2;box-shadow:0 0 0 6px rgba(23,105,170,.035)}
+.ma-page .course-card .tag,.ma-page .model-card .model-tag{position:relative;z-index:2}
+/* Light surfaces should never inherit pale text from an earlier theme. */
+.ma-page .faq-list summary{color:#263e55!important}.ma-page .faq-list details p{color:#64778a!important}.ma-page .faq-group-head{background:linear-gradient(135deg,#f5faff,#fbf9ff)!important}.ma-page .faq-cta{background:linear-gradient(145deg,#f5faff,#fbf9ff)!important}
+/* Dark feature panels get their own high-contrast ornament system. */
+.ma-page .service-band,.ma-page .path-panel,.ma-page .education-cta,.ma-page .about-cta{position:relative;overflow:hidden}
+.ma-page .service-band:before,.ma-page .path-panel:before,.ma-page .education-cta:before,.ma-page .about-cta:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 12% 15%,rgba(255,255,255,.14),transparent 24%),linear-gradient(120deg,transparent 0 68%,rgba(255,255,255,.045) 68% 69%,transparent 69%),repeating-linear-gradient(135deg,transparent 0 24px,rgba(255,255,255,.018) 24px 25px)}
+.ma-page .service-band>*,.ma-page .path-panel>*,.ma-page .education-cta>* ,.ma-page .about-cta>*{position:relative;z-index:1}
+.ma-page .service-band p,.ma-page .path-panel p,.ma-page .education-cta p,.ma-page .about-cta p{color:#dbe8f4!important}
+.ma-page .service-band aside div,.ma-page .path-step{background:rgba(255,255,255,.065)!important;border-color:rgba(255,255,255,.16)!important}
+.ma-page .service-band aside span,.ma-page .path-step span{color:#cbdbea!important}
+/* Avoid accidental text-on-text or translucent collisions. */
+.ma-page .section-alt,.ma-page .education-section{isolation:isolate}.ma-page .section-alt>* ,.ma-page .education-section>*{position:relative;z-index:1}
+@media(max-width:780px){.ma-page .service-section-head h2,.ma-page .education-section-head h2,.ma-page .section-header h2,.ma-page .section-head h2{font-size:23px!important}.ma-page .service-card,.ma-page .education-card,.ma-page .course-card,.ma-page .instructor-card,.ma-page .model-card,.ma-page .detail-panel{border-radius:17px!important}.ma-page .service-card p,.ma-page .education-card p,.ma-page .course-card p,.ma-page .model-card p,.ma-page .detail-panel p{font-size:11px!important}}
