@@ -1,0 +1,5 @@
+/* MARKAZ AMOOZESH — global spacing fix */
+html,body{margin-bottom:0!important}
+body{padding-bottom:0!important}
+@media(max-width:780px){body{padding-bottom:0!important}.footer{padding-bottom:88px!important}.bottom-nav{height:68px!important}}
+@media(min-width:781px){.bottom-nav{display:none!important}}
