@@ -1,4 +1,4 @@
-/* Final visual audit — last layer. Keeps the site calm, readable, patterned and consistent. */
+/* Final visual audit — last layer. */
 :root{--fa-ink:#17324d;--fa-body:#52677a;--fa-muted:#718395;--fa-line:#dce6ee;--fa-surface:#fff;--fa-soft:#f5f8fb;--fa-blue:#1769aa;--fa-purple:#5b5bd6;--fa-shadow:0 10px 28px rgba(23,50,77,.055)}
 html,body{color:var(--fa-body);background:#f7f9fc}
 body.ma-page{font-family:Vazirmatn,Vazir,Tahoma,sans-serif;background-image:linear-gradient(rgba(23,105,170,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(23,105,170,.018) 1px,transparent 1px);background-size:44px 44px}
@@ -33,26 +33,25 @@ body.ma-page.home-page .home-stats .stat-card:nth-child(2n):after,body.ma-page.h
 body.ma-page.home-page .home-stats .stat-card:nth-child(3n):after,body.ma-page.home-page .home-card:nth-child(3n):after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(125deg,transparent 0 78%,rgba(23,105,170,.045) 78% 79%,transparent 79%)}
 .ma-page .page-hero h1,.ma-page .education-hero h1,.ma-page .solution-hero h1,.ma-page .consultation-hero h1{color:var(--fa-ink)!important}
 .ma-page .page-hero p,.ma-page .education-hero p,.ma-page .solution-hero p,.ma-page .consultation-hero p{color:var(--fa-body)!important}
-/* Auth: deliberately compact and minimal. */
-body.ma-page.auth-page main.auth,.ma-page.auth-page main.auth{min-height:calc(100vh - 170px)!important;padding:42px 18px!important}
-.ma-page.auth-page .auth-box,.ma-page.auth-page .auth-panel,.ma-page.auth-page .auth-card{width:min(100%,390px)!important;max-width:390px!important;padding:24px 25px 22px!important;border-radius:18px!important;background:rgba(255,255,255,.97)!important;border:1px solid #dfe7ee!important;box-shadow:0 12px 30px rgba(23,50,77,.06)!important}
-.ma-page.auth-page h1{font-size:22px!important;line-height:1.5!important;margin:7px 0 10px!important}
-.ma-page.auth-page p{font-size:12px!important;line-height:1.8!important;margin:0 0 14px!important}
-.ma-page.auth-page label{font-size:12px!important;margin:8px 0 4px!important;color:#40586d!important}
-.ma-page.auth-page input,.ma-page.auth-page select{height:40px!important;min-height:40px!important;padding:8px 11px!important;border-radius:9px!important;font-size:12px!important}
-.ma-page.auth-page button,.ma-page.auth-page .btn,.ma-page.auth-page .ma-btn,.ma-page.auth-page .btn-gold{height:41px!important;min-height:41px!important;padding:8px 13px!important;border-radius:9px!important;font-size:12px!important}
-.ma-page.auth-page input[type=checkbox]{width:13px!important;height:13px!important;min-height:13px!important;padding:0!important}
-.ma-page.auth-page .remember,.ma-page.auth-page .remember-row,.ma-page.auth-page .form-check{font-size:11px!important;line-height:1.5!important;gap:6px!important;margin:8px 0!important}
-.ma-page.auth-page .eyebrow{font-size:10px!important;letter-spacing:.02em!important;padding:4px 8px!important;border-radius:999px!important}
-.ma-page.auth-page .auth-box:before,.ma-page.auth-page .auth-panel:before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background-image:linear-gradient(rgba(23,105,170,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(23,105,170,.022) 1px,transparent 1px);background-size:26px 26px}
-.ma-page.auth-page .auth-box>*,.ma-page.auth-page .auth-panel>*{position:relative;z-index:1}
-.ma-page.auth-page .auth-footer,.ma-page.auth-page .auth-links{font-size:11px!important;margin-top:10px!important}
-/* Recovery page uses the same compact auth geometry. */
-body.ma-page main[style*="max-width:420px"]{max-width:390px!important}
-body.ma-page main[style*="max-width:420px"]>div{max-width:390px!important;padding:24px 25px 22px!important;border-radius:18px!important;box-shadow:0 12px 30px rgba(23,50,77,.06)!important;border:1px solid #dfe7ee!important}
-body.ma-page main[style*="max-width:420px"] input{height:40px!important;padding:8px 11px!important;font-size:12px!important}
-/* Hover remains restrained. */
+/* Authentication: compact by design. */
+.auth-page .auth-shell{min-height:calc(100vh - 170px)!important;display:grid;place-items:center;padding:32px 16px!important}
+.auth-page .auth-box,.auth-page .auth-panel,.auth-page .auth-card{position:relative;width:min(100%,380px)!important;max-width:380px!important;padding:22px 23px 20px!important;border:1px solid #dfe7ee!important;border-radius:17px!important;background:rgba(255,255,255,.98)!important;box-shadow:0 10px 26px rgba(23,50,77,.055)!important;overflow:hidden}
+.auth-page .auth-box:before,.auth-page .auth-panel:before,.auth-page .auth-card:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(23,105,170,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(23,105,170,.02) 1px,transparent 1px);background-size:25px 25px}
+.auth-page .auth-box>* ,.auth-page .auth-panel>* ,.auth-page .auth-card>*{position:relative;z-index:1}
+.auth-page h1{font-size:21px!important;line-height:1.5!important;margin:6px 0 8px!important}
+.auth-page p{font-size:11.5px!important;line-height:1.75!important;margin:0 0 12px!important}
+.auth-page label{font-size:11.5px!important;margin:7px 0 3px!important;color:#40586d!important}
+.auth-page input,.auth-page select{height:38px!important;min-height:38px!important;padding:7px 10px!important;border-radius:8px!important;font-size:11.5px!important}
+.auth-page button,.auth-page .btn,.auth-page .ma-btn,.auth-page .btn-gold{height:39px!important;min-height:39px!important;padding:7px 12px!important;border-radius:8px!important;font-size:11.5px!important}
+.auth-page input[type=checkbox]{width:12px!important;height:12px!important;min-height:12px!important;padding:0!important}
+.auth-page .remember,.auth-page .remember-row,.auth-page .form-check{font-size:10.5px!important;line-height:1.4!important;gap:5px!important;margin:7px 0!important}
+.auth-page .eyebrow{font-size:9.5px!important;padding:4px 7px!important}
+.auth-page .auth-links,.auth-page .auth-footer{font-size:10.5px!important;margin-top:8px!important}
+body.ma-page main[style*="max-width:420px"]{max-width:380px!important;padding:32px 16px!important}
+body.ma-page main[style*="max-width:420px"]>div{max-width:380px!important;padding:22px 23px 20px!important;border-radius:17px!important;box-shadow:0 10px 26px rgba(23,50,77,.055)!important;border:1px solid #dfe7ee!important}
+body.ma-page main[style*="max-width:420px"] input{height:38px!important;padding:7px 10px!important;font-size:11.5px!important}
+body.ma-page main[style*="max-width:420px"] .btn-gold{height:39px!important;font-size:11.5px!important;border-radius:8px!important}
 .ma-page .card,.ma-page .service-card,.ma-page .education-card,.ma-page .course-card,.ma-page .instructor-card,.ma-page .model-card,.ma-page .detail-panel,.ma-page .step,.ma-page .cooperation-step,.ma-page .faq-group,.ma-page .solution-card,.ma-page .platform-feature,.ma-page .advantage-item,.ma-page .process-step,.ma-page .lms-feature,.ma-page .lms-role{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
 .ma-page .card:hover,.ma-page .service-card:hover,.ma-page .education-card:hover,.ma-page .course-card:hover,.ma-page .instructor-card:hover,.ma-page .model-card:hover,.ma-page .solution-card:hover,.ma-page .platform-feature:hover,.ma-page .advantage-item:hover,.ma-page .process-step:hover,.ma-page .lms-feature:hover,.ma-page .lms-role:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(23,50,77,.075)!important;border-color:#cddce7!important}
-@media(max-width:780px){body.ma-page{background-size:36px 36px}.ma-page .card,.ma-page .service-card,.ma-page .education-card,.ma-page .course-card,.ma-page .instructor-card,.ma-page .model-card,.ma-page .detail-panel,.ma-page .step,.ma-page .cooperation-step,.ma-page .faq-group,.ma-page .solution-card,.ma-page .platform-feature,.ma-page .advantage-item,.ma-page .process-step,.ma-page .lms-feature,.ma-page .lms-role{border-radius:16px!important}.ma-page.auth-page main.auth,.ma-page.auth-page main.auth{padding:28px 14px!important}.ma-page.auth-page .auth-box,.ma-page.auth-page .auth-panel,.ma-page.auth-page .auth-card{width:min(100%,360px)!important;padding:21px 19px 20px!important}.ma-page.auth-page h1{font-size:20px!important}}
-@media(max-width:420px){.ma-page.auth-page .auth-box,.ma-page.auth-page .auth-panel,.ma-page.auth-page .auth-card{max-width:340px!important;padding:20px 17px!important}.ma-page.auth-page input,.ma-page.auth-page select{height:39px!important}.ma-page.auth-page button,.ma-page.auth-page .btn,.ma-page.auth-page .ma-btn,.ma-page.auth-page .btn-gold{height:40px!important}}
+@media(max-width:780px){body.ma-page{background-size:36px 36px}.auth-page .auth-shell{min-height:calc(100vh - 145px)!important;padding:26px 14px!important}.auth-page .auth-box,.auth-page .auth-panel,.auth-page .auth-card{width:min(100%,350px)!important;max-width:350px!important;padding:20px 18px 18px!important}.auth-page h1{font-size:19px!important}}
+@media(max-width:420px){.auth-page .auth-box,.auth-page .auth-panel,.auth-page .auth-card{width:min(100%,330px)!important;max-width:330px!important;padding:19px 16px!important}.auth-page input,.auth-page select{height:37px!important}.auth-page button,.auth-page .btn,.auth-page .ma-btn,.auth-page .btn-gold{height:38px!important}}
