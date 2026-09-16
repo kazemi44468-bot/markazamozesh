@@ -1,0 +1,44 @@
+/* Final visual polish: shared typography, spacing, content blocks and cross-browser fallbacks */
+:root{--p-bg:#f7f9fc;--p-surface:#fff;--p-soft:#eef5fa;--p-text:#172033;--p-heading:#102a43;--p-muted:#64748b;--p-line:#d9e2ec;--p-brand:#1769aa;--p-brand-soft:#e7f2fa;--p-accent:#0f9d9a;--p-shadow:0 10px 30px rgba(31,52,73,.07);--p-radius:18px}
+html{background:var(--p-bg);color-scheme:light}
+body.ma-page{font-family:"Vazirmatn","Vazir","IRANSans","IRANSansX","Segoe UI",Tahoma,Arial,sans-serif!important;background:var(--p-bg)!important;color:var(--p-text)!important;line-height:1.85!important;overflow-x:hidden!important}
+body.ma-page *{box-sizing:border-box}
+body.ma-page h1,body.ma-page h2,body.ma-page h3,body.ma-page h4,body.ma-page h5{color:var(--p-heading);font-weight:800;line-height:1.55}
+body.ma-page p,body.ma-page li,body.ma-page label,body.ma-page small{color:var(--p-muted)}
+body.ma-page p{line-height:1.95}
+body.ma-page main{width:100%;overflow:hidden}
+body.ma-page main>section:not(.hero):not(.stats){width:min(1220px,calc(100% - 28px));margin-inline:auto}
+body.ma-page .section,.ma-page .solutions,.ma-page .platform,.ma-page .service-list,.ma-page .page-hero{width:min(1220px,calc(100% - 28px));margin-inline:auto}
+body.ma-page .section-head,body.ma-page .section-header{max-width:850px;margin-inline:auto;margin-bottom:30px}
+body.ma-page .section-head h2,body.ma-page .section-header h2{margin:8px 0 10px;font-size:clamp(23px,3vw,34px);font-weight:850}
+body.ma-page .section-head p,body.ma-page .section-header p{max-width:720px;margin-inline:auto}
+body.ma-page .eyebrow{display:inline-flex;align-items:center;gap:6px;color:var(--p-brand)!important;background:var(--p-brand-soft)!important;border:1px solid #d4e8f5!important;border-radius:999px;padding:5px 11px;font-size:11px;font-weight:800}
+body.ma-page .badge{display:inline-flex!important;align-items:center;gap:6px;background:var(--p-brand-soft)!important;color:var(--p-brand)!important;border:1px solid #d4e8f5!important;border-radius:999px;padding:6px 11px}
+body.ma-page .cards,body.ma-page .services-grid,body.ma-page .solutions-grid,body.ma-page .solution-grid,body.ma-page .course-grid,body.ma-page .process-steps,body.ma-page .advantages-grid,body.ma-page .platform-grid{align-items:stretch}
+body.ma-page .cards>article,body.ma-page .service-card,body.ma-page .course,body.ma-page .solution-card,body.ma-page .solution-grid>div,body.ma-page .process-step,body.ma-page .advantage-item,body.ma-page .platform-feature{display:flex;flex-direction:column;justify-content:flex-start;min-height:150px}
+body.ma-page .cards h3,body.ma-page .service-card h3,body.ma-page .course h3,body.ma-page .solution-card h3{margin:10px 0 5px}
+body.ma-page .cards p,body.ma-page .service-card p,body.ma-page .course p,body.ma-page .solution-card p,body.ma-page .solution-grid span{display:block;margin:0 0 10px}
+body.ma-page .text-link{margin-top:auto;color:var(--p-brand)!important;font-weight:750;display:inline-flex;align-items:center;gap:5px}
+body.ma-page .hero{background:linear-gradient(145deg,#edf7fc 0%,#f8fafc 56%,#f4f1ff 100%)!important}
+body.ma-page .hero h1{font-size:clamp(30px,4.2vw,52px)!important;max-width:760px}
+body.ma-page .hero p{max-width:680px;font-size:clamp(14px,1.5vw,17px)}
+body.ma-page .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+body.ma-page .ma-btn{min-height:42px;padding:10px 16px!important;border-radius:12px!important;font-weight:750!important}
+body.ma-page .hero-card,body.ma-page .cta,body.ma-page .platform,body.ma-page .stats{border:1px solid var(--p-line)!important;box-shadow:var(--p-shadow)!important}
+body.ma-page .stats{width:min(1100px,calc(100% - 28px));margin:-25px auto 35px;position:relative;z-index:3;border-radius:18px;background:#fff!important}
+body.ma-page form,body.ma-page .form-card,body.ma-page .auth-box,body.ma-page .auth,body.ma-page .contact-card,body.ma-page .consultation-card{color:var(--p-text)}
+body.ma-page input,body.ma-page textarea,body.ma-page select{width:100%;min-height:44px;border:1px solid var(--p-line)!important;border-radius:12px!important;background:#fff!important;color:var(--p-text)!important;font-family:inherit!important;padding:10px 12px!important;outline:none}
+body.ma-page input:focus,body.ma-page textarea:focus,body.ma-page select:focus{border-color:#8db9d6!important;box-shadow:0 0 0 3px rgba(23,105,170,.08)!important}
+body.ma-page button{font-family:inherit!important}
+body.ma-page .page-hero{background:linear-gradient(145deg,#eef7fb,#f8fafc)!important;border:1px solid var(--p-line);border-radius:24px;padding:48px 30px!important;margin-top:24px!important;text-align:center}
+body.ma-page .page-hero p{max-width:760px;margin:12px auto 0}
+body.ma-page .section-alt{background:#f2f6fa!important;border-block:1px solid var(--p-line);border-radius:24px}
+body.ma-page .footer,.ma-page .ma-footer{margin-top:45px}
+body.ma-page .ma-logo-mark{display:none!important}
+body.ma-page .ma-logo-img{display:block!important;width:52px!important;height:52px!important;object-fit:contain!important;border-radius:10px}
+body.ma-page .brand-showcase .fallback{display:none!important}
+body.ma-page .brand-showcase{overflow:hidden}
+body.ma-page .brand-showcase img{display:block!important;object-fit:contain!important}
+@media(max-width:780px){body.ma-page main>section:not(.hero):not(.stats),body.ma-page .section,body.ma-page .solutions,body.ma-page .platform,body.ma-page .service-list,body.ma-page .page-hero{width:calc(100% - 20px)}body.ma-page .section{padding-top:40px!important;padding-bottom:40px!important}body.ma-page .page-hero{padding:34px 18px!important;margin-top:15px!important}.section-head h2,.section-header h2{font-size:22px!important}.cards,.services-grid,.solutions-grid,.solution-grid,.course-grid,.process-steps,.advantages-grid,.platform-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.cards>article,.service-card,.course,.solution-card,.solution-grid>div,.process-step,.advantage-item,.platform-feature{min-width:0!important;padding:14px!important}.hero-actions>a{flex:1 1 170px}.ma-footer-inner{gap:18px!important}}
+@media(max-width:420px){body.ma-page .cards h3,body.ma-page .service-card h3,body.ma-page .course h3,body.ma-page .solution-card h3{font-size:13px!important}body.ma-page .cards p,body.ma-page .service-card p,body.ma-page .course p,body.ma-page .solution-card p,body.ma-page .solution-grid span{font-size:10.5px!important;line-height:1.75!important}body.ma-page .cards>article,body.ma-page .service-card,body.ma-page .course,body.ma-page .solution-card,body.ma-page .solution-grid>div{padding:12px!important;border-radius:14px!important}.ma-logo-img{width:44px!important;height:44px!important}.brand-showcase{flex-direction:column!important;text-align:center}.brand-showcase img{width:130px!important;height:70px!important}}
+@media(prefers-reduced-motion:reduce){body.ma-page *,body.ma-page *::before,body.ma-page *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
