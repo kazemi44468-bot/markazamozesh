@@ -1,0 +1,81 @@
+/* MARKAZ AMOOZESH — page-by-page visual audit layer */
+:root{--pa-ink:#10243a;--pa-text:#405469;--pa-muted:#718296;--pa-blue:#1769aa;--pa-purple:#6858b8;--pa-line:#dce6ee;--pa-soft:#f5f9fc;--pa-shadow:0 14px 36px rgba(16,36,58,.065)}
+/* shared page composition */
+body.ma-page .page-hero,body.ma-page .education-hero,body.ma-page .solution-hero,body.ma-page .consultation-hero{isolation:isolate}
+body.ma-page .page-hero:after,body.ma-page .education-hero:after,body.ma-page .solution-hero:after,body.ma-page .consultation-hero:after{content:"";position:absolute;left:7%;bottom:-80px;width:190px;height:190px;border:1px solid rgba(23,105,170,.09);border-radius:50%;box-shadow:0 0 0 24px rgba(23,105,170,.018),0 0 0 48px rgba(104,88,184,.012);pointer-events:none;z-index:-1}
+body.ma-page .page-hero h1,body.ma-page .education-hero h1,body.ma-page .solution-hero h1,body.ma-page .consultation-hero h1{letter-spacing:-.35px;font-weight:900}
+body.ma-page .page-hero p,body.ma-page .education-hero p,body.ma-page .solution-hero-copy,body.ma-page .consultation-hero p{max-width:760px;margin-inline:auto}
+body.ma-page .section-header,body.ma-page .section-head,body.ma-page .solution-heading,body.ma-page .education-section-head{position:relative}
+body.ma-page .section-header h2,body.ma-page .section-head h2,body.ma-page .solution-heading h2,body.ma-page .education-section-head h2{color:var(--pa-ink)!important}
+body.ma-page .section-header h2:after,body.ma-page .section-head h2:after{width:62px;height:3px;bottom:-2px}
+/* home: since the hero is intentionally removed, give the opening block a designed entry */
+body.ma-page.home-page .home-stats{position:relative;padding-top:34px;background:linear-gradient(180deg,#eef6fb 0,#f8fbfd 70%,transparent 100%)!important}
+body.ma-page.home-page .home-stats:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 0,rgba(23,105,170,.08),transparent 24%),radial-gradient(circle at 85% 10%,rgba(104,88,184,.07),transparent 22%);pointer-events:none}
+body.ma-page.home-page .home-stats-grid{position:relative;gap:14px}
+body.ma-page.home-page .home-stats-grid>div{background:rgba(255,255,255,.88)!important;border:1px solid #dce8f0!important;box-shadow:var(--pa-shadow)!important;border-radius:18px!important;padding:22px 15px!important;transition:transform .22s,box-shadow .22s,border-color .22s}
+body.ma-page.home-page .home-stats-grid>div:hover{transform:translateY(-3px);border-color:#c4d9e7!important;box-shadow:0 18px 40px rgba(16,36,58,.09)!important}
+body.ma-page.home-page .home-card{background:#fff!important;border:1px solid var(--pa-line)!important;box-shadow:var(--pa-shadow)!important;border-radius:20px!important}
+body.ma-page.home-page .home-card:nth-child(3n+1){background:linear-gradient(145deg,#fff,#f6fbff)!important}
+body.ma-page.home-page .home-card:nth-child(3n+2){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page.home-page .home-card:nth-child(3n){background:linear-gradient(145deg,#fff,#f7fbfa)!important}
+body.ma-page.home-page .home-platform{position:relative;background:linear-gradient(135deg,#f3f8fc,#f9f7ff)!important;border-top:1px solid #e2eaf1;border-bottom:1px solid #e2eaf1}
+/* services / generic catalog */
+body.ma-page .service-hero,body.ma-page .cooperation-hero,body.ma-page .faq-hero{box-shadow:0 18px 44px rgba(16,36,58,.055)}
+body.ma-page .service-grid .service-card:nth-child(3n+1){background:linear-gradient(145deg,#fff,#f5fbff)!important}
+body.ma-page .service-grid .service-card:nth-child(3n+2){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page .service-grid .service-card:nth-child(3n){background:linear-gradient(145deg,#fff,#f7fbfa)!important}
+body.ma-page .service-card .service-number{display:inline-flex;padding:5px 8px;border-radius:8px;background:#edf6fb}
+body.ma-page .detail-grid .detail-panel:first-child{background:linear-gradient(145deg,#fff,#f5faff)!important}
+body.ma-page .detail-grid .detail-panel:last-child{background:linear-gradient(145deg,#fff,#faf8ff)!important}
+/* solutions */
+body.ma-page.solution-page .solution-feature{transition:transform .22s,box-shadow .22s,border-color .22s}
+body.ma-page.solution-page .solution-feature:nth-child(4n+1){background:linear-gradient(145deg,#fff,#f5fbff)!important}
+body.ma-page.solution-page .solution-feature:nth-child(4n+2){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page.solution-page .solution-feature:nth-child(4n+3){background:linear-gradient(145deg,#fff,#f7fbfa)!important}
+body.ma-page.solution-page .solution-feature:nth-child(4n){background:linear-gradient(145deg,#fff,#f8f9ff)!important}
+body.ma-page.solution-page .solution-feature:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(16,36,58,.09)}
+body.ma-page.solution-page .workflow-step:nth-child(odd){background:#fff!important}.solution-page .workflow-step:nth-child(even){background:linear-gradient(145deg,#f8fbfd,#fbf9ff)!important}
+body.ma-page.solution-page .solution-cta{box-shadow:0 22px 48px rgba(16,42,67,.16)}
+/* platform */
+body.ma-page:not(.solution-page) .platform-grid .platform-feature{border-radius:20px!important;padding:21px!important;box-shadow:var(--pa-shadow)!important}
+body.ma-page .platform-grid .platform-feature:nth-child(3n+1){background:linear-gradient(145deg,#fff,#f5fbff)!important}
+body.ma-page .platform-grid .platform-feature:nth-child(3n+2){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page .platform-grid .platform-feature:nth-child(3n){background:linear-gradient(145deg,#fff,#f7fbfa)!important}
+body.ma-page .solutions-grid .solution-card{background:#fff!important;border:1px solid var(--pa-line)!important;border-radius:19px!important;box-shadow:var(--pa-shadow)!important}
+body.ma-page .solutions-grid .solution-card:nth-child(2){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+/* education */
+body.ma-page .education-grid .education-card:nth-child(3n+1),body.ma-page .course-grid .course-card:nth-child(3n+1){background:linear-gradient(145deg,#fff,#f5fbff)!important}
+body.ma-page .education-grid .education-card:nth-child(3n+2),body.ma-page .course-grid .course-card:nth-child(3n+2){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page .education-grid .education-card:nth-child(3n),body.ma-page .course-grid .course-card:nth-child(3n){background:linear-gradient(145deg,#fff,#f7fbfa)!important}
+body.ma-page .instructor-grid .instructor-card{transition:transform .22s,box-shadow .22s,border-color .22s}
+body.ma-page .instructor-grid .instructor-card:nth-child(2n){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page .instructor-grid .instructor-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(16,36,58,.09)}
+/* about: hero remains hidden by request; improve the story opening instead */
+body.ma-page.about-page .about-story{margin-top:24px}
+body.ma-page.about-page .about-story article{background:linear-gradient(145deg,#fff,#f5fbff)!important;box-shadow:var(--pa-shadow)!important}
+body.ma-page.about-page .about-story aside{background:linear-gradient(145deg,#f7fbff,#faf7ff)!important;box-shadow:var(--pa-shadow)!important}
+body.ma-page.about-page .about-pillar:nth-child(2n){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page.about-page .about-capability:nth-child(2n){background:linear-gradient(145deg,#fff,#f8faff)!important}
+body.ma-page.about-page .about-audience article:nth-child(2n){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+/* contact */
+body.ma-page.contact-page .contact-intro,body.ma-page.contact-page .contact-form-section{align-items:stretch}
+body.ma-page.contact-page .contact-panel:not(.contact-side){background:linear-gradient(145deg,#fff,#f5fbff)!important}
+body.ma-page.contact-page .contact-channel:nth-child(2n){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page.contact-page .contact-faq-item:nth-child(2n){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+/* consultation */
+body.ma-page .consultation-form{box-shadow:var(--pa-shadow)!important}
+body.ma-page .consultation-form .form-section:nth-of-type(2){background:linear-gradient(90deg,transparent,#f8fbfd,transparent);border-radius:14px;padding-inline:10px}
+body.ma-page .consultation-side{box-shadow:0 20px 46px rgba(16,47,99,.16)!important}
+body.ma-page .consultation-process{box-shadow:var(--pa-shadow)!important}
+body.ma-page .consultation-process .process-step:nth-child(2n){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page .consultation-cta{box-shadow:var(--pa-shadow)!important}
+/* auth */
+body.ma-page.auth-page .auth-panel{box-shadow:0 24px 62px rgba(16,36,58,.12)!important}
+body.ma-page.auth-page .auth-panel:after{content:"";position:absolute;right:-80px;bottom:-100px;width:220px;height:220px;border:1px solid rgba(23,105,170,.07);border-radius:50%;box-shadow:0 0 0 24px rgba(23,105,170,.018),0 0 0 48px rgba(104,88,184,.012);pointer-events:none}
+/* faq */
+body.ma-page.faq-page .faq-group:nth-child(2n){background:linear-gradient(145deg,#fff,#faf8ff)!important}
+body.ma-page.faq-page .faq-group-head{position:relative}.faq-page .faq-group-head:after{content:"";position:absolute;left:20px;top:50%;width:34px;height:34px;border:1px solid rgba(23,105,170,.08);border-radius:50%;transform:translateY(-50%)}
+/* consistent motion / mobile */
+body.ma-page .home-card,body.ma-page .service-card,body.ma-page .education-card,body.ma-page .course-card,body.ma-page .solution-feature,body.ma-page .platform-feature,body.ma-page .contact-panel,body.ma-page .contact-form-card,body.ma-page .contact-info-card{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+@media(max-width:780px){body.ma-page .home-stats-grid{grid-template-columns:1fr 1fr!important}body.ma-page .home-card-grid.three,body.ma-page .home-card-grid.two{grid-template-columns:1fr!important}body.ma-page .contact-intro,body.ma-page .contact-form-section{gap:14px}body.ma-page .section-header,body.ma-page .section-head{margin-bottom:22px!important}}
+@media(max-width:520px){body.ma-page.home-page .home-stats-grid{grid-template-columns:1fr!important}body.ma-page .page-hero:after,body.ma-page .education-hero:after,body.ma-page .solution-hero:after,body.ma-page .consultation-hero:after{width:130px;height:130px;left:-40px;bottom:-65px}body.ma-page .home-card,body.ma-page .service-card,body.ma-page .education-card,body.ma-page .course-card,body.ma-page .solution-feature{border-radius:17px!important}}
