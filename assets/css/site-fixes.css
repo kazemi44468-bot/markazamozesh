@@ -1,7 +1,7 @@
 /* MARKAZ AMOOZESH — global refinements */
 html,body{margin-bottom:0!important}body{padding-bottom:0!important}.home-page .home-hero,.about-page .about-hero{display:none!important}
 /* Home: remove the cooperation CTA block completely */
-body.ma-page.home-page .home-cta{display:none!important}
+.ma-page .home-cta,.home-page .home-cta{display:none!important}
 .ma-shell-header{background-color:#f5f8fb!important;background-image:url("../images/backhead.png")!important;background-repeat:repeat!important;background-position:top right!important;background-size:auto!important;background-blend-mode:normal!important;box-shadow:0 7px 24px rgba(15,23,42,.09)!important}
 .ma-shell-header .ma-header-inner,.ma-shell-header .ma-header-brand{box-sizing:border-box!important}.ma-shell-header .ma-header-brand{margin-right:16px!important}.ma-shell-header .ma-header-inner{padding-right:16px!important;padding-left:16px!important}
 /* Subtle button language across the site */
